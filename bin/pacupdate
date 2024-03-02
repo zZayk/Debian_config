@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#cupd=$(apt list --upgradable | wc -l)
+sudo apt update > /dev/null 2> /dev/null
+cupd=$(apt list --upgradable 2> /dev/null | wc -l)
+cupd_minus_1=$((cupd - 1))
+printf "$cupd_minus_1 \n"
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+while true; do
+    battery="$(cat /sys/class/power_supply/BAT0/capacity)"
+
+    if [ "$battery" -lt 10 ]; then
+        notify-send "Low Battery" "Battery is at ${battery}%."
+    fi
+
+    sleep 300  # Check every 5 minutes
+done
+
