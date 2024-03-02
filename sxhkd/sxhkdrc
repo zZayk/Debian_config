@@ -1,0 +1,20 @@
+##function keys
+
+# Volume control
+XF86AudioRaiseVolume
+    ~/script/volume_control.sh increase
+
+XF86AudioLowerVolume
+    ~/script/volume_control.sh decrease
+
+XF86AudioMute
+    ~/script/volume_control.sh toggle
+
+# brightness control
+XF86MonBrightnessUp
+    ~/script/brightness_control.sh increase
+
+XF86MonBrightnessDown
+    ~/script/brightness_control.sh decrease
+
+
